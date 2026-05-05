@@ -1,0 +1,45 @@
+/* src/components/HowItWorks.css */
+.how-section {
+  padding: 6rem 5%;
+  background: var(--bg2);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.step-card {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  cursor: default;
+}
+
+.step-num {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.step-card h4 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.step-card p {
+  font-size: 0.83rem;
+  color: var(--muted);
+  line-height: 1.55;
+}

@@ -1,0 +1,64 @@
+/* src/components/Rules.css */
+.rules-section { padding: 6rem 5%; }
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.rule-card {
+  padding: 1.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.rule-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--purple), var(--accent));
+}
+
+.rule-bg-num {
+  position: absolute;
+  top: 0.5rem; right: 1rem;
+  font-family: 'Syne', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: rgba(168, 85, 247, 0.08);
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+}
+
+.rule-card h4 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.rule-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rule-card ul li {
+  font-size: 0.87rem;
+  color: var(--muted);
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.rule-arrow {
+  color: var(--purple3);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
